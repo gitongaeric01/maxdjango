@@ -4,16 +4,6 @@ from django.http import HttpResponse, HttpResponseNotFound
 
 # Create your views here.
 
-
-def index(request):
-    return HttpResponse("This works")
-
-def february(request):
-    return HttpResponse("walk at 20 minutes every month")
-
-def march(request):
-    return HttpResponse("learn django atleast 30min every day")
-
 def monthly_challenge(request, month):
     challenge_text = None
     if month == "january":
